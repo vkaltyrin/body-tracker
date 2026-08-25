@@ -1,0 +1,16 @@
+{
+  "name": "body-tracker",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "api": "cd api && uv run uvicorn app.main:app --reload --port 4318",
+    "api:migrate": "cd api && uv run alembic upgrade head",
+    "gen:api": "openapi-typescript http://localhost:4318/openapi.json -o packages/core/src/api/schema.ts",
+    "typecheck": "tsc --build --verbose"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.4.4",
+    "typescript": "^5.7.2"
+  }
+}

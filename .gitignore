@@ -1,0 +1,31 @@
+# js
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# env и секреты
+.env
+.env.*
+!.env.example
+
+# сборки нативных приложений
+apps/menubar/BodyTraining.app/
+apps/menubar/BodyTraining.dmg
+apps/menubar/build/
+apps/mobile/.expo/
+ios/
+android/
+
+# vercel
+.vercel/
+
+# macos
+.DS_Store
