@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "name": "Приоритет: задняя цепь",
+  "targets": { "yoga": 7, "gym": 4 },
+  "priorities": [
+    { "rank": 1, "title": "Наклоны · Хануманасана · Пашчимоттанасана" },
+    { "rank": 2, "title": "Самаконасана" }
+  ],
+  "days": [
+    {
+      "dow": 1,
+      "axis": "Опора на руках",
+      "detail": "стойка + Пинча",
+      "priority": null,
+      "gym": { "session": "Lower A", "optional": false }
+    },
+    {
+      "dow": 2,
+      "axis": "Задняя цепь: сила",
+      "detail": "сила в амплитуде",
+      "priority": 1,
+      "gym": null
+    },
+    {
+      "dow": 3,
+      "axis": "Задняя цепь: амплитуда",
+      "detail": "продольный",
+      "priority": 1,
+      "gym": { "session": "Upper A", "optional": false }
+    },
+    {
+      "dow": 4,
+      "axis": "Фронтальная",
+      "detail": "Самаконасана",
+      "priority": 2,
+      "gym": null
+    },
+    {
+      "dow": 5,
+      "axis": "Экстензия",
+      "detail": "прогибы",
+      "priority": null,
+      "gym": { "session": "Lower B", "optional": false }
+    },
+    {
+      "dow": 6,
+      "axis": "Восстановление",
+      "detail": "снятие тонуса",
+      "priority": null,
+      "gym": { "session": "Upper B", "optional": true }
+    },
+    {
+      "dow": 7,
+      "axis": "Задняя цепь: глубокий наклон",
+      "detail": "Пашчимоттанасана",
+      "priority": 1,
+      "gym": null
+    }
+  ]
+}
