@@ -22,19 +22,47 @@ export type Today = {
   target: { yoga: number; gym: number }
 }
 
+export type Lesson = { id: string; title: string; minutes: number; url: string }
+
+export type Goal = { id: string; title: string; priority: number | null }
+
+export type Slot = {
+  kind: 'warmup' | 'main' | 'filler'
+  title: string
+  minutes: string
+  direction: string
+  goals: string[]
+  lessons: string[]
+}
+
+export type GymBlock = { tag: string; text: string; scheme: string }
+
+export type Gym = {
+  session: string
+  optional: boolean
+  warmup: string
+  blocks: GymBlock[]
+  aim: string
+}
+
 export type PlanDay = {
   dow: number
   axis: string
   detail: string
   priority: number | null
-  gym: { session: string; optional: boolean } | null
+  goals: string[]
+  slots: Slot[]
+  gym: Gym | null
 }
 
 export type Plan = {
   version: number
   name: string
+  note: string
   targets: { yoga: number; gym: number }
   priorities: { rank: number; title: string }[]
+  goals: Goal[]
+  lessons: Lesson[]
   days: PlanDay[]
 }
 

@@ -1,10 +1,408 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "Приоритет: задняя цепь",
-  "targets": { "yoga": 7, "gym": 4 },
+  "note": "Йога утром семь дней, зал вечером пн · ср · пт · сб опц.",
+  "targets": {
+    "yoga": 7,
+    "gym": 4
+  },
   "priorities": [
-    { "rank": 1, "title": "Наклоны · Хануманасана · Пашчимоттанасана" },
-    { "rank": 2, "title": "Самаконасана" }
+    {
+      "rank": 1,
+      "title": "Наклоны · Хануманасана · Пашчимоттанасана"
+    },
+    {
+      "rank": 2,
+      "title": "Самаконасана"
+    }
+  ],
+  "goals": [
+    {
+      "id": "naklony",
+      "title": "Наклоны и Пашчимоттанасана",
+      "priority": 1
+    },
+    {
+      "id": "hanumanasana",
+      "title": "Полная Хануманасана",
+      "priority": 1
+    },
+    {
+      "id": "samakonasana",
+      "title": "Полная Самаконасана",
+      "priority": 2
+    },
+    {
+      "id": "nogi-za-golovoy",
+      "title": "Две ноги за головой, лотос",
+      "priority": null
+    },
+    {
+      "id": "progiby",
+      "title": "Глубокие прогибы",
+      "priority": null
+    },
+    {
+      "id": "stoika",
+      "title": "Стойка на руках и Пинча",
+      "priority": null
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hanu-1-1",
+      "title": "Хануманасана 1.1 Мобилизация",
+      "minutes": 13,
+      "url": "https://rashyoga.ru/video/181"
+    },
+    {
+      "id": "hanu-1-2",
+      "title": "Хануманасана 1.2 Мобилизация",
+      "minutes": 12,
+      "url": "https://rashyoga.ru/video/182"
+    },
+    {
+      "id": "hanu-1-3",
+      "title": "Хануманасана 1.3 Мобилизация",
+      "minutes": 10,
+      "url": "https://rashyoga.ru/video/183"
+    },
+    {
+      "id": "hanu-2-1",
+      "title": "Хануманасана 2.1 Сила",
+      "minutes": 17,
+      "url": "https://rashyoga.ru/video/184"
+    },
+    {
+      "id": "hanu-2-2",
+      "title": "Хануманасана 2.2 Сила",
+      "minutes": 14,
+      "url": "https://rashyoga.ru/video/185"
+    },
+    {
+      "id": "hanu-3-1",
+      "title": "Хануманасана 3.1 Амплитуда",
+      "minutes": 16,
+      "url": "https://rashyoga.ru/video/187"
+    },
+    {
+      "id": "hanu-3-2",
+      "title": "Хануманасана 3.2 Амплитуда",
+      "minutes": 16,
+      "url": "https://rashyoga.ru/video/188"
+    },
+    {
+      "id": "sama-1-1",
+      "title": "Самаконасана 1.1 Мобилизация",
+      "minutes": 10,
+      "url": "https://rashyoga.ru/video/166"
+    },
+    {
+      "id": "sama-1-2",
+      "title": "Самаконасана 1.2 Мобилизация",
+      "minutes": 10,
+      "url": "https://rashyoga.ru/video/167"
+    },
+    {
+      "id": "sama-1-3",
+      "title": "Самаконасана 1.3 Мобилизация",
+      "minutes": 12,
+      "url": "https://rashyoga.ru/video/168"
+    },
+    {
+      "id": "sama-3-1",
+      "title": "Самаконасана 3.1 Амплитуда",
+      "minutes": 14,
+      "url": "https://rashyoga.ru/video/172"
+    },
+    {
+      "id": "sama-3-4",
+      "title": "Самаконасана 3.4 Амплитуда",
+      "minutes": 5,
+      "url": "https://rashyoga.ru/video/191"
+    },
+    {
+      "id": "sama-3-5",
+      "title": "Самаконасана 3.5 Амплитуда",
+      "minutes": 12,
+      "url": "https://rashyoga.ru/video/201"
+    },
+    {
+      "id": "prod-1",
+      "title": "Продольное направление 1",
+      "minutes": 50,
+      "url": "https://rashyoga.ru/video/27"
+    },
+    {
+      "id": "prod-2",
+      "title": "Продольное направление 2",
+      "minutes": 45,
+      "url": "https://rashyoga.ru/video/28"
+    },
+    {
+      "id": "prod-3",
+      "title": "Продольное направление 3",
+      "minutes": 51,
+      "url": "https://rashyoga.ru/video/29"
+    },
+    {
+      "id": "prod-4",
+      "title": "Продольное направление 4",
+      "minutes": 65,
+      "url": "https://rashyoga.ru/video/62"
+    },
+    {
+      "id": "prod-fit",
+      "title": "Продольный шпагат fit",
+      "minutes": 48,
+      "url": "https://rashyoga.ru/video/89"
+    },
+    {
+      "id": "poper-1",
+      "title": "Поперечное направление 1",
+      "minutes": 53,
+      "url": "https://rashyoga.ru/video/30"
+    },
+    {
+      "id": "poper-2",
+      "title": "Поперечное направление 2",
+      "minutes": 52,
+      "url": "https://rashyoga.ru/video/31"
+    },
+    {
+      "id": "poper-3",
+      "title": "Поперечное направление 3",
+      "minutes": 47,
+      "url": "https://rashyoga.ru/video/32"
+    },
+    {
+      "id": "poper-4",
+      "title": "Поперечное направление 4",
+      "minutes": 60,
+      "url": "https://rashyoga.ru/video/67"
+    },
+    {
+      "id": "poper-fit",
+      "title": "Поперечный шпагат fit",
+      "minutes": 47,
+      "url": "https://rashyoga.ru/video/90"
+    },
+    {
+      "id": "poper-interval",
+      "title": "Поперечный в интервалах",
+      "minutes": 48,
+      "url": "https://rashyoga.ru/video/124"
+    },
+    {
+      "id": "tbs-shpagaty-3",
+      "title": "Подвижность тбс. Шпагаты 3",
+      "minutes": 66,
+      "url": "https://rashyoga.ru/video/116"
+    },
+    {
+      "id": "ladder-uhp",
+      "title": "Ladder flow УХП",
+      "minutes": 48,
+      "url": "https://rashyoga.ru/video/160"
+    },
+    {
+      "id": "zaryadka-6",
+      "title": "Зарядка 6 — разминка перед стойками",
+      "minutes": 23,
+      "url": "https://rashyoga.ru/video/216"
+    },
+    {
+      "id": "kisti",
+      "title": "Сильные кисти и предплечья",
+      "minutes": 32,
+      "url": "https://rashyoga.ru/video/115"
+    },
+    {
+      "id": "stoika-1",
+      "title": "Курс «Стойка на руках» — Урок 1",
+      "minutes": 40,
+      "url": "https://rashyoga.ru/video/74"
+    },
+    {
+      "id": "stoika-2",
+      "title": "Курс «Стойка на руках» — Урок 2",
+      "minutes": 36,
+      "url": "https://rashyoga.ru/video/75"
+    },
+    {
+      "id": "stoika-3",
+      "title": "Курс «Стойка на руках» — Урок 3",
+      "minutes": 41,
+      "url": "https://rashyoga.ru/video/76"
+    },
+    {
+      "id": "stabilnaya-stoika",
+      "title": "Стабильная стойка",
+      "minutes": 48,
+      "url": "https://rashyoga.ru/video/214"
+    },
+    {
+      "id": "pincha-balans",
+      "title": "Пинча. Баланс, прессап",
+      "minutes": 38,
+      "url": "https://rashyoga.ru/video/119"
+    },
+    {
+      "id": "idealnaya-stoika",
+      "title": "Идеальная стойка",
+      "minutes": 28,
+      "url": "https://rashyoga.ru/video/190"
+    },
+    {
+      "id": "silovoe-sgibanie",
+      "title": "Силовое сгибание плеч",
+      "minutes": 32,
+      "url": "https://rashyoga.ru/video/195"
+    },
+    {
+      "id": "stabilnye-lopatki",
+      "title": "Стабильные лопатки",
+      "minutes": 50,
+      "url": "https://rashyoga.ru/video/205"
+    },
+    {
+      "id": "znakomstvo-pincha",
+      "title": "Знакомство · Пинча Маюрасана",
+      "minutes": 14,
+      "url": "https://rashyoga.ru/video/229"
+    },
+    {
+      "id": "ugolok",
+      "title": "Уголок L-sit",
+      "minutes": 62,
+      "url": "https://rashyoga.ru/video/132"
+    },
+    {
+      "id": "lolasana",
+      "title": "Лоласана",
+      "minutes": 69,
+      "url": "https://rashyoga.ru/video/59"
+    },
+    {
+      "id": "znakomstvo-kor",
+      "title": "Знакомство · Кор",
+      "minutes": 17,
+      "url": "https://rashyoga.ru/video/225"
+    },
+    {
+      "id": "stalnoy-press",
+      "title": "Стальной пресс",
+      "minutes": 25,
+      "url": "https://rashyoga.ru/video/86"
+    },
+    {
+      "id": "hollow-body",
+      "title": "Hollow body",
+      "minutes": 44,
+      "url": "https://rashyoga.ru/video/164"
+    },
+    {
+      "id": "progiby-1",
+      "title": "Прогибы 1",
+      "minutes": 53,
+      "url": "https://rashyoga.ru/video/33"
+    },
+    {
+      "id": "progiby-2",
+      "title": "Прогибы 2",
+      "minutes": 41,
+      "url": "https://rashyoga.ru/video/34"
+    },
+    {
+      "id": "kamatkarasana",
+      "title": "Каматкарасана флоу",
+      "minutes": 39,
+      "url": "https://rashyoga.ru/video/193"
+    },
+    {
+      "id": "ushtrasana",
+      "title": "Глубокая Уштрасана",
+      "minutes": 76,
+      "url": "https://rashyoga.ru/video/93"
+    },
+    {
+      "id": "kolcevoy",
+      "title": "Кольцевой захват",
+      "minutes": 77,
+      "url": "https://rashyoga.ru/video/35"
+    },
+    {
+      "id": "koleso",
+      "title": "Расслабление на колесе",
+      "minutes": 8,
+      "url": "https://rashyoga.ru/video/144"
+    },
+    {
+      "id": "yoga-dandasana",
+      "title": "Йога Дандасана",
+      "minutes": 67,
+      "url": "https://rashyoga.ru/video/85"
+    },
+    {
+      "id": "rotaciya-tbs",
+      "title": "Ротация тбс",
+      "minutes": 50,
+      "url": "https://rashyoga.ru/video/39"
+    },
+    {
+      "id": "nogi-za-golovoy",
+      "title": "Ноги за головой",
+      "minutes": 68,
+      "url": "https://rashyoga.ru/video/101"
+    },
+    {
+      "id": "tittibhasana",
+      "title": "Титтибхасана",
+      "minutes": 52,
+      "url": "https://rashyoga.ru/video/42"
+    },
+    {
+      "id": "myagkaya-naklony",
+      "title": "Мягкая наклоны, скрутки",
+      "minutes": 61,
+      "url": "https://rashyoga.ru/video/64"
+    },
+    {
+      "id": "myagkaya-bedra",
+      "title": "Мягкая проработка бёдер",
+      "minutes": 40,
+      "url": "https://rashyoga.ru/video/43"
+    },
+    {
+      "id": "myagkoe-vytyazhenie",
+      "title": "Мягкое вытяжение и скрутки",
+      "minutes": 56,
+      "url": "https://rashyoga.ru/video/97"
+    },
+    {
+      "id": "legkie-plechi",
+      "title": "Лёгкие плечи",
+      "minutes": 48,
+      "url": "https://rashyoga.ru/video/163"
+    },
+    {
+      "id": "passivnaya-nogi",
+      "title": "Пассивная растяжка ног",
+      "minutes": 25,
+      "url": "https://rashyoga.ru/video/158"
+    },
+    {
+      "id": "shavasana-2",
+      "title": "Шавасана 2",
+      "minutes": 11,
+      "url": "https://rashyoga.ru/video/114"
+    },
+    {
+      "id": "shavasana-3",
+      "title": "Шавасана 3",
+      "minutes": 7,
+      "url": "https://rashyoga.ru/video/179"
+    }
   ],
   "days": [
     {
@@ -12,13 +410,173 @@
       "axis": "Опора на руках",
       "detail": "стойка + Пинча",
       "priority": null,
-      "gym": { "session": "Lower A", "optional": false }
+      "goals": [
+        "stoika"
+      ],
+      "slots": [
+        {
+          "kind": "warmup",
+          "title": "Разогрев",
+          "minutes": "15–20",
+          "direction": "Кисти и флексия плеча",
+          "goals": [
+            "stoika"
+          ],
+          "lessons": [
+            "zaryadka-6",
+            "kisti"
+          ]
+        },
+        {
+          "kind": "main",
+          "title": "Основной урок",
+          "minutes": "40–48",
+          "direction": "Навык вертикальной опоры",
+          "goals": [
+            "stoika"
+          ],
+          "lessons": [
+            "stoika-1",
+            "stoika-2",
+            "stoika-3",
+            "stabilnaya-stoika",
+            "pincha-balans"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 1",
+          "minutes": "12–16",
+          "direction": "Кор — компрессия",
+          "goals": [
+            "nogi-za-golovoy",
+            "naklony"
+          ],
+          "lessons": [
+            "ugolok",
+            "znakomstvo-kor"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 2",
+          "minutes": "10–13",
+          "direction": "ТБС сгибание, мобилизация",
+          "goals": [
+            "hanumanasana"
+          ],
+          "lessons": [
+            "hanu-1-1",
+            "hanu-1-2"
+          ]
+        }
+      ],
+      "gym": {
+        "session": "Lower A",
+        "optional": false,
+        "warmup": "bike · вращения тазом · выпады с ротацией · goblet squat с паузой · вис + scap pull-ups · glute bridge",
+        "blocks": [
+          {
+            "tag": "навык",
+            "text": "Фронтальный присед",
+            "scheme": "4 × 3–5 · пустой гриф"
+          },
+          {
+            "tag": "A",
+            "text": "Присед со штангой + Подтягивания",
+            "scheme": "3 × 5 · 90 + × 6"
+          },
+          {
+            "tag": "B",
+            "text": "Зашагивания на тумбу + Махи гирей",
+            "scheme": "8 / ногу · 18 + 3 × 12 · 36"
+          },
+          {
+            "tag": "C",
+            "text": "Трисет: аддукторы / hanging leg raise / suitcase carry",
+            "scheme": "12–15 / 10–12 / 30 м · 24"
+          },
+          {
+            "tag": "D",
+            "text": "Икры стоя",
+            "scheme": "3 × 12–15"
+          },
+          {
+            "tag": "EMOM",
+            "text": "KB swing 12 / bike 12 кал / devil press 5",
+            "scheme": "12 мин"
+          }
+        ],
+        "aim": "Квадрицепс, односторонняя работа, кор, икры. Аддукторы идут в поперечный, hanging leg raise — в компрессию."
+      }
     },
     {
       "dow": 2,
       "axis": "Задняя цепь: сила",
       "detail": "сила в амплитуде",
       "priority": 1,
+      "goals": [
+        "hanumanasana",
+        "naklony"
+      ],
+      "slots": [
+        {
+          "kind": "warmup",
+          "title": "Разогрев",
+          "minutes": "10–13",
+          "direction": "ТБС сгибание, мобилизация",
+          "goals": [
+            "hanumanasana"
+          ],
+          "lessons": [
+            "hanu-1-2",
+            "hanu-1-3"
+          ]
+        },
+        {
+          "kind": "main",
+          "title": "Основной урок",
+          "minutes": "45–48",
+          "direction": "Задняя цепь — сила в амплитуде",
+          "goals": [
+            "hanumanasana",
+            "naklony"
+          ],
+          "lessons": [
+            "prod-fit",
+            "ladder-uhp",
+            "hanu-2-1",
+            "hanu-2-2"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 1",
+          "minutes": "12–16",
+          "direction": "Кор — компрессия",
+          "goals": [
+            "naklony",
+            "nogi-za-golovoy"
+          ],
+          "lessons": [
+            "lolasana",
+            "ugolok"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 2",
+          "minutes": "10–12",
+          "direction": "ТБС отведение, мобилизация",
+          "goals": [
+            "samakonasana"
+          ],
+          "lessons": [
+            "sama-1-1",
+            "sama-1-2"
+          ]
+        }
+      ],
       "gym": null
     },
     {
@@ -26,13 +584,178 @@
       "axis": "Задняя цепь: амплитуда",
       "detail": "продольный",
       "priority": 1,
-      "gym": { "session": "Upper A", "optional": false }
+      "goals": [
+        "hanumanasana"
+      ],
+      "slots": [
+        {
+          "kind": "warmup",
+          "title": "Разогрев",
+          "minutes": "10–13",
+          "direction": "ТБС сгибание и разгибание, мобилизация",
+          "goals": [
+            "hanumanasana"
+          ],
+          "lessons": [
+            "hanu-1-1",
+            "hanu-1-3"
+          ]
+        },
+        {
+          "kind": "main",
+          "title": "Основной урок",
+          "minutes": "45–50",
+          "direction": "Продольный — амплитуда",
+          "goals": [
+            "hanumanasana"
+          ],
+          "lessons": [
+            "prod-1",
+            "prod-2",
+            "prod-3",
+            "prod-4",
+            "hanu-3-1",
+            "hanu-3-2"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 1",
+          "minutes": "12–16",
+          "direction": "Кор — hollow",
+          "goals": [
+            "stoika"
+          ],
+          "lessons": [
+            "stalnoy-press",
+            "hollow-body"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 2",
+          "minutes": "10–12",
+          "direction": "ТБС отведение, амплитуда",
+          "goals": [
+            "samakonasana"
+          ],
+          "lessons": [
+            "sama-3-1",
+            "sama-3-4"
+          ]
+        }
+      ],
+      "gym": {
+        "session": "Upper A",
+        "optional": false,
+        "warmup": "bike · band pull-apart · отжимания · вис + scap pull-ups · лёгкие махи · Cuban press 2×8–10",
+        "blocks": [
+          {
+            "tag": "A",
+            "text": "Жим штанги лёжа + Горизонтальная тяга",
+            "scheme": "4 × 8 · 55 + 10–12"
+          },
+          {
+            "tag": "B",
+            "text": "Жим гантелей стоя + Подтягивания с весом",
+            "scheme": "8–10 · 2×14 + 3 × 6→8"
+          },
+          {
+            "tag": "C",
+            "text": "Face pull + Махи в стороны",
+            "scheme": "12–15 + 12–15 · 6–8"
+          },
+          {
+            "tag": "D",
+            "text": "Skull crusher + Сгибания на бицепс",
+            "scheme": "4 × 10–12"
+          },
+          {
+            "tag": "E",
+            "text": "Разведения на наклонной 30°",
+            "scheme": "3 × 12–15"
+          },
+          {
+            "tag": "финиш",
+            "text": "External rotation",
+            "scheme": "2 × 12–15 / руку"
+          },
+          {
+            "tag": "EMOM",
+            "text": "KB clean&press 5+5 @16 / бёрпи 8 / bike 12 кал",
+            "scheme": "9 мин"
+          }
+        ],
+        "aim": "Грудь, оверхед, спина, дельты, руки. Вечером ноги не нужны — поэтому под этим днём стоит приоритет 1."
+      }
     },
     {
       "dow": 4,
       "axis": "Фронтальная",
       "detail": "Самаконасана",
       "priority": 2,
+      "goals": [
+        "samakonasana"
+      ],
+      "slots": [
+        {
+          "kind": "warmup",
+          "title": "Разогрев",
+          "minutes": "10–13",
+          "direction": "ТБС отведение и наружная ротация",
+          "goals": [
+            "samakonasana"
+          ],
+          "lessons": [
+            "sama-1-1",
+            "sama-1-3"
+          ]
+        },
+        {
+          "kind": "main",
+          "title": "Основной урок",
+          "minutes": "47–53",
+          "direction": "ТБС отведение: сила → амплитуда",
+          "goals": [
+            "samakonasana"
+          ],
+          "lessons": [
+            "poper-1",
+            "poper-2",
+            "poper-3",
+            "poper-4",
+            "poper-fit",
+            "poper-interval"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 1",
+          "minutes": "12–16",
+          "direction": "Задняя цепь, амплитуда",
+          "goals": [
+            "naklony",
+            "hanumanasana"
+          ],
+          "lessons": [
+            "hanu-3-1",
+            "hanu-3-2"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 2",
+          "minutes": "10–12",
+          "direction": "Плечо — флексия",
+          "goals": [
+            "stoika"
+          ],
+          "lessons": [
+            "silovoe-sgibanie",
+            "stabilnye-lopatki"
+          ]
+        }
+      ],
       "gym": null
     },
     {
@@ -40,20 +763,268 @@
       "axis": "Экстензия",
       "detail": "прогибы",
       "priority": null,
-      "gym": { "session": "Lower B", "optional": false }
+      "goals": [
+        "progiby"
+      ],
+      "slots": [
+        {
+          "kind": "warmup",
+          "title": "Разогрев",
+          "minutes": "10–13",
+          "direction": "Плечо — экстензия, грудной отдел",
+          "goals": [
+            "progiby"
+          ],
+          "lessons": [
+            "koleso",
+            "legkie-plechi"
+          ]
+        },
+        {
+          "kind": "main",
+          "title": "Основной урок",
+          "minutes": "39–53",
+          "direction": "Разгибание позвоночника и ТБС",
+          "goals": [
+            "progiby"
+          ],
+          "lessons": [
+            "progiby-1",
+            "progiby-2",
+            "kamatkarasana",
+            "ushtrasana",
+            "kolcevoy"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 1",
+          "minutes": "12–16",
+          "direction": "Плечо — флексия, опора",
+          "goals": [
+            "stoika"
+          ],
+          "lessons": [
+            "znakomstvo-pincha",
+            "idealnaya-stoika"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 2",
+          "minutes": "10–12",
+          "direction": "ТБС отведение, амплитуда",
+          "goals": [
+            "samakonasana"
+          ],
+          "lessons": [
+            "sama-3-5",
+            "sama-3-4"
+          ]
+        }
+      ],
+      "gym": {
+        "session": "Lower B",
+        "optional": false,
+        "warmup": "bike · вращения тазом · выпады с ротацией · glute bridge + румынская с пустым грифом · вис · good morning с палкой",
+        "blocks": [
+          {
+            "tag": "навык",
+            "text": "Взятие на грудь",
+            "scheme": "5 × 2–3 · пустой гриф"
+          },
+          {
+            "tag": "A",
+            "text": "Становая, лесенка + Подтягивания",
+            "scheme": "70 → 80 → 90 × 5 + × 6"
+          },
+          {
+            "tag": "B",
+            "text": "Ягодичный мост",
+            "scheme": "3 × 8 · 80"
+          },
+          {
+            "tag": "C",
+            "text": "Румынская тяга, полная амплитуда",
+            "scheme": "4 × 8 · 60"
+          },
+          {
+            "tag": "D",
+            "text": "Nordic curls + Jefferson curls",
+            "scheme": "3 × 4–6 + 6–8"
+          },
+          {
+            "tag": "E",
+            "text": "Икры на согнутых",
+            "scheme": "3 × 12–15"
+          },
+          {
+            "tag": "EMOM",
+            "text": "опционально: трастеры 8 / bike 12 кал / mountain climbers 20",
+            "scheme": "9 мин"
+          }
+        ],
+        "aim": "Взрыв и сила задней цепи в удлинённой позиции. RDL, Nordic и Jefferson curls — прямой вклад в Хануманасану и Пашчимоттанасану."
+      }
     },
     {
       "dow": 6,
       "axis": "Восстановление",
       "detail": "снятие тонуса",
       "priority": null,
-      "gym": { "session": "Upper B", "optional": true }
+      "goals": [
+        "naklony"
+      ],
+      "slots": [
+        {
+          "kind": "main",
+          "title": "Основной урок",
+          "minutes": "40–56",
+          "direction": "Снятие тонуса, пассивная амплитуда",
+          "goals": [
+            "naklony"
+          ],
+          "lessons": [
+            "myagkaya-bedra",
+            "myagkoe-vytyazhenie",
+            "legkie-plechi"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 1",
+          "minutes": "12–25",
+          "direction": "Задняя цепь, мягкое вытяжение",
+          "goals": [
+            "naklony"
+          ],
+          "lessons": [
+            "passivnaya-nogi",
+            "myagkaya-naklony"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 2",
+          "minutes": "8–12",
+          "direction": "Пассивный прогиб и шавасана",
+          "goals": [
+            "progiby"
+          ],
+          "lessons": [
+            "koleso",
+            "shavasana-3"
+          ]
+        }
+      ],
+      "gym": {
+        "session": "Upper B",
+        "optional": true,
+        "warmup": "bike · shoulder dislocates · wall slides · scap push-ups · вис · Cuban press 2×8–10",
+        "blocks": [
+          {
+            "tag": "A",
+            "text": "Армейский жим стоя + Тяга гантели в наклоне",
+            "scheme": "4 × 6–8 · 30 + 10 / руку · 20–22"
+          },
+          {
+            "tag": "B",
+            "text": "Жим гантелей на наклонной 30° + Farmer carry",
+            "scheme": "3 × 10–12 · 2×18 + 30 м · 2×24"
+          },
+          {
+            "tag": "C",
+            "text": "Махи в стороны + Face pull",
+            "scheme": "4 × 12–15 + 12–15"
+          },
+          {
+            "tag": "D",
+            "text": "Пряморучный pulldown",
+            "scheme": "3 × 12–15"
+          },
+          {
+            "tag": "E",
+            "text": "Hammer curls + Трицепс pushdown",
+            "scheme": "4 × 10–12"
+          },
+          {
+            "tag": "финиш",
+            "text": "External rotation",
+            "scheme": "2 × 12–15 / руку"
+          },
+          {
+            "tag": "EMOM",
+            "text": "devil press 5 / bike 12 кал / отжимания 12",
+            "scheme": "9 мин"
+          }
+        ],
+        "aim": "Оверхед штангой, ширина спины, руки. Клапан недели: выпадает первым, когда нужно разгрузиться."
+      }
     },
     {
       "dow": 7,
       "axis": "Задняя цепь: глубокий наклон",
       "detail": "Пашчимоттанасана",
       "priority": 1,
+      "goals": [
+        "naklony",
+        "nogi-za-golovoy"
+      ],
+      "slots": [
+        {
+          "kind": "warmup",
+          "title": "Разогрев",
+          "minutes": "10–13",
+          "direction": "ТБС сгибание, мобилизация",
+          "goals": [
+            "naklony"
+          ],
+          "lessons": [
+            "hanu-1-1"
+          ]
+        },
+        {
+          "kind": "main",
+          "title": "Основной урок",
+          "minutes": "52–66",
+          "direction": "Глубокий наклон: пассивная и активная амплитуда",
+          "goals": [
+            "naklony"
+          ],
+          "lessons": [
+            "myagkaya-naklony",
+            "tittibhasana",
+            "tbs-shpagaty-3"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 1",
+          "minutes": "12–16",
+          "direction": "ТБС наружная ротация и глубокое сгибание",
+          "goals": [
+            "nogi-za-golovoy"
+          ],
+          "lessons": [
+            "yoga-dandasana",
+            "rotaciya-tbs",
+            "nogi-za-golovoy"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 2",
+          "minutes": "10–12",
+          "direction": "Кор — компрессия и шавасана",
+          "goals": [
+            "naklony"
+          ],
+          "lessons": [
+            "ugolok",
+            "shavasana-2"
+          ]
+        }
+      ],
       "gym": null
     }
   ]
