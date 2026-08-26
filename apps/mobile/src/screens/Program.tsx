@@ -67,18 +67,12 @@ function Section({ title, trailing }: { title: string; trailing?: string }) {
   )
 }
 
-const KIND_LABEL: Record<Slot['kind'], string> = {
-  warmup: 'разогрев',
-  main: 'основной',
-  filler: 'добор',
-}
-
 function SlotCard({ slot, byId }: { slot: Slot; byId: Map<string, Lesson> }) {
   const main = slot.kind === 'main'
   return (
     <View style={[s.card, main && s.cardMain]}>
       <View style={s.cardHead}>
-        <Text style={[s.kind, main && s.kindMain]}>{KIND_LABEL[slot.kind]}</Text>
+        <Text style={[s.kind, main && s.kindMain]}>{slot.title}</Text>
         <Text style={s.minutes}>{slot.minutes} мин</Text>
       </View>
       <Text style={[s.direction, main && s.directionMain]}>{slot.direction}</Text>

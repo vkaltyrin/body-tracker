@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "name": "Приоритет: задняя цепь",
   "note": "Йога утром семь дней, зал вечером пн · ср · пт · сб опц.",
   "targets": {
@@ -9,7 +9,7 @@
   "priorities": [
     {
       "rank": 1,
-      "title": "Наклоны · Хануманасана · Пашчимоттанасана"
+      "title": "Наклоны · Хануманасана · Пашчимоттанасана · Упавиштха"
     },
     {
       "rank": 2,
@@ -18,8 +18,13 @@
   ],
   "goals": [
     {
-      "id": "naklony",
-      "title": "Наклоны и Пашчимоттанасана",
+      "id": "naklon-vmeste",
+      "title": "Пашчимоттанасана — ноги вместе",
+      "priority": 1
+    },
+    {
+      "id": "naklon-shiroko",
+      "title": "Упавиштха → Титтибхасана",
       "priority": 1
     },
     {
@@ -278,6 +283,18 @@
       "url": "https://rashyoga.ru/video/132"
     },
     {
+      "id": "ugly",
+      "title": "Углы — балансовые углы и straddle",
+      "minutes": 72,
+      "url": "https://rashyoga.ru/video/55"
+    },
+    {
+      "id": "bhujapidasana",
+      "title": "Каундиниасана, Бхуджапидасана",
+      "minutes": 18,
+      "url": "https://rashyoga.ru/video/23"
+    },
+    {
       "id": "lolasana",
       "title": "Лоласана",
       "minutes": 69,
@@ -447,14 +464,17 @@
           "kind": "filler",
           "title": "Добор 1",
           "minutes": "12–16",
-          "direction": "Кор — компрессия",
+          "direction": "Кор — компрессия, чередуя вместе и широко",
           "goals": [
-            "nogi-za-golovoy",
-            "naklony"
+            "naklon-vmeste",
+            "naklon-shiroko",
+            "nogi-za-golovoy"
           ],
           "lessons": [
             "ugolok",
-            "znakomstvo-kor"
+            "lolasana",
+            "ugly",
+            "bhujapidasana"
           ]
         },
         {
@@ -517,7 +537,7 @@
       "priority": 1,
       "goals": [
         "hanumanasana",
-        "naklony"
+        "naklon-vmeste"
       ],
       "slots": [
         {
@@ -540,7 +560,7 @@
           "direction": "Задняя цепь — сила в амплитуде",
           "goals": [
             "hanumanasana",
-            "naklony"
+            "naklon-vmeste"
           ],
           "lessons": [
             "prod-fit",
@@ -555,7 +575,7 @@
           "minutes": "12–16",
           "direction": "Кор — компрессия",
           "goals": [
-            "naklony",
+            "naklon-vmeste",
             "nogi-za-golovoy"
           ],
           "lessons": [
@@ -695,7 +715,9 @@
       "detail": "Самаконасана",
       "priority": 2,
       "goals": [
-        "samakonasana"
+        "samakonasana",
+        "naklon-shiroko",
+        "hanumanasana"
       ],
       "slots": [
         {
@@ -734,12 +756,27 @@
           "minutes": "12–16",
           "direction": "Задняя цепь, амплитуда",
           "goals": [
-            "naklony",
+            "naklon-vmeste",
             "hanumanasana"
           ],
           "lessons": [
             "hanu-3-1",
             "hanu-3-2"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 3",
+          "minutes": "12–15",
+          "direction": "Упавиштха → Титтибхасана: сгибание при отведении",
+          "goals": [
+            "naklon-shiroko",
+            "samakonasana"
+          ],
+          "lessons": [
+            "poper-3",
+            "tittibhasana",
+            "ugly"
           ]
         },
         {
@@ -873,7 +910,9 @@
       "detail": "снятие тонуса",
       "priority": null,
       "goals": [
-        "naklony"
+        "naklon-vmeste",
+        "naklon-shiroko",
+        "progiby"
       ],
       "slots": [
         {
@@ -882,7 +921,7 @@
           "minutes": "40–56",
           "direction": "Снятие тонуса, пассивная амплитуда",
           "goals": [
-            "naklony"
+            "naklon-vmeste"
           ],
           "lessons": [
             "myagkaya-bedra",
@@ -894,9 +933,10 @@
           "kind": "filler",
           "title": "Добор 1",
           "minutes": "12–25",
-          "direction": "Задняя цепь, мягкое вытяжение",
+          "direction": "Задняя цепь мягко — ноги вместе и широко",
           "goals": [
-            "naklony"
+            "naklon-vmeste",
+            "naklon-shiroko"
           ],
           "lessons": [
             "passivnaya-nogi",
@@ -967,8 +1007,9 @@
       "detail": "Пашчимоттанасана",
       "priority": 1,
       "goals": [
-        "naklony",
-        "nogi-za-golovoy"
+        "naklon-vmeste",
+        "nogi-za-golovoy",
+        "naklon-shiroko"
       ],
       "slots": [
         {
@@ -977,7 +1018,7 @@
           "minutes": "10–13",
           "direction": "ТБС сгибание, мобилизация",
           "goals": [
-            "naklony"
+            "naklon-vmeste"
           ],
           "lessons": [
             "hanu-1-1"
@@ -989,12 +1030,24 @@
           "minutes": "52–66",
           "direction": "Глубокий наклон: пассивная и активная амплитуда",
           "goals": [
-            "naklony"
+            "naklon-vmeste"
           ],
           "lessons": [
             "myagkaya-naklony",
             "tittibhasana",
             "tbs-shpagaty-3"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 3",
+          "minutes": "8–10",
+          "direction": "Упавиштха пассивно — грудь к полу",
+          "goals": [
+            "naklon-shiroko"
+          ],
+          "lessons": [
+            "poper-3"
           ]
         },
         {
@@ -1017,7 +1070,7 @@
           "minutes": "10–12",
           "direction": "Кор — компрессия и шавасана",
           "goals": [
-            "naklony"
+            "naklon-vmeste"
           ],
           "lessons": [
             "ugolok",

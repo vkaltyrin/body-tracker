@@ -31,8 +31,10 @@ export default function App() {
 
   const load = useCallback(async () => {
     try {
+      // План тянем каждый раз: правка plan.json должна доезжать до клиента
+      // без перезапуска. Он маленький, а позже закэшируется по ETag.
       const [p, t, entries] = await Promise.all([
-        plan ? Promise.resolve(plan) : api.getPlan(),
+        api.getPlan(),
         api.getToday(today),
         api.getRange(key(monday), key(addDays(monday, 6))),
       ])
@@ -43,7 +45,7 @@ export default function App() {
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Не удалось получить данные')
     }
-  }, [monday, plan, today])
+  }, [monday, today])
 
   useEffect(() => {
     void load()
