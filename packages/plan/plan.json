@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "name": "Приоритет: задняя цепь",
   "note": "Йога утром семь дней, зал вечером пн · ср · пт · сб опц.",
   "targets": {
@@ -355,6 +355,12 @@
       "url": "https://rashyoga.ru/video/144"
     },
     {
+      "id": "znakomstvo-progiby",
+      "title": "Знакомство · Прогибы",
+      "minutes": 12,
+      "url": "https://rashyoga.ru/video/230"
+    },
+    {
       "id": "yoga-dandasana",
       "title": "Йога Дандасана",
       "minutes": 67,
@@ -428,7 +434,8 @@
       "detail": "стойка + Пинча",
       "priority": null,
       "goals": [
-        "stoika"
+        "stoika",
+        "progiby"
       ],
       "slots": [
         {
@@ -475,6 +482,19 @@
             "lolasana",
             "ugly",
             "bhujapidasana"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 3",
+          "minutes": "10–14",
+          "direction": "Разгибание грудного отдела и ТБС",
+          "goals": [
+            "progiby"
+          ],
+          "lessons": [
+            "znakomstvo-progiby",
+            "koleso"
           ]
         },
         {
@@ -946,14 +966,25 @@
         {
           "kind": "filler",
           "title": "Добор 2",
-          "minutes": "8–12",
-          "direction": "Пассивный прогиб и шавасана",
+          "minutes": "10–14",
+          "direction": "Пассивное разгибание грудного",
           "goals": [
             "progiby"
           ],
           "lessons": [
             "koleso",
-            "shavasana-3"
+            "znakomstvo-progiby"
+          ]
+        },
+        {
+          "kind": "filler",
+          "title": "Добор 4",
+          "minutes": "7–11",
+          "direction": "Шавасана",
+          "goals": [],
+          "lessons": [
+            "shavasana-3",
+            "shavasana-2"
           ]
         }
       ],

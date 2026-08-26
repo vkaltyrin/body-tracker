@@ -73,6 +73,7 @@ LESSONS_RAW = {
     "ushtrasana": ("Глубокая Уштрасана", 76, 93),
     "kolcevoy": ("Кольцевой захват", 77, 35),
     "koleso": ("Расслабление на колесе", 8, 144),
+    "znakomstvo-progiby": ("Знакомство · Прогибы", 12, 230),
     # ротация и наклоны
     "yoga-dandasana": ("Йога Дандасана", 67, 85),
     "rotaciya-tbs": ("Ротация тбс", 50, 39),
@@ -130,7 +131,7 @@ DAYS = [
         "axis": "Опора на руках",
         "detail": "стойка + Пинча",
         "priority": None,
-        "goals": ["stoika"],
+        "goals": ["stoika", "progiby"],
         "slots": [
             slot("warmup", "Разогрев", "15–20", "Кисти и флексия плеча", ["stoika"],
                  ["zaryadka-6", "kisti"]),
@@ -139,6 +140,10 @@ DAYS = [
             slot("filler", "Добор 1", "12–16", "Кор — компрессия, чередуя вместе и широко",
                  ["naklon-vmeste", "naklon-shiroko", "nogi-za-golovoy"],
                  ["ugolok", "lolasana", "ugly", "bhujapidasana"]),
+            # Утренний прогиб раскрывает переднюю поверхность бедра, вечером
+            # присед и махи работают в разгибании ТБС. Одно направление за день.
+            slot("filler", "Добор 3", "10–14", "Разгибание грудного отдела и ТБС",
+                 ["progiby"], ["znakomstvo-progiby", "koleso"]),
             slot("filler", "Добор 2", "10–13", "ТБС сгибание, мобилизация",
                  ["hanumanasana"], ["hanu-1-1", "hanu-1-2"]),
         ],
@@ -269,8 +274,9 @@ DAYS = [
                  ["naklon-vmeste"], ["myagkaya-bedra", "myagkoe-vytyazhenie", "legkie-plechi"]),
             slot("filler", "Добор 1", "12–25", "Задняя цепь мягко — ноги вместе и широко",
                  ["naklon-vmeste", "naklon-shiroko"], ["passivnaya-nogi", "myagkaya-naklony"]),
-            slot("filler", "Добор 2", "8–12", "Пассивный прогиб и шавасана",
-                 ["progiby"], ["koleso", "shavasana-3"]),
+            slot("filler", "Добор 2", "10–14", "Пассивное разгибание грудного",
+                 ["progiby"], ["koleso", "znakomstvo-progiby"]),
+            slot("filler", "Добор 4", "7–11", "Шавасана", [], ["shavasana-3", "shavasana-2"]),
         ],
         "gym": gym(
             "Upper B", True,
@@ -310,7 +316,7 @@ DAYS = [
 ]
 
 PLAN = {
-    "version": 3,
+    "version": 4,
     "name": "Приоритет: задняя цепь",
     "note": "Йога утром семь дней, зал вечером пн · ср · пт · сб опц.",
     "targets": {"yoga": 7, "gym": 4},
